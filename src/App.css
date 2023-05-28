@@ -1,38 +1,1474 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-xl: 20px;
+  --fs-2xl: 24px;
+  --fs-2xxl: 28px;
+  --fs-3xl: 32px;
+  --fs-4xl: 48px;
+  --fs-5xl: 56px;
+  --clr-black: #151515;
+  --clr-27BBA2: #27bba2;
+  --clr-lightwhite: #fafafa;
+  --clr-lightblack: rgba(0, 0, 0, 0.14);
+  --clr-lightgreen: rgba(38, 180, 156, 0.09);
+  --clr-00FFCC: #00ffcc;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.fs_sm {
+  font-size: var(--fs-sm);
+}
+.fs_md {
+  font-size: var(--fs-md);
+}
+.fs_xl {
+  font-size: var(--fs-xl);
+}
+.fs_2xl {
+  font-size: var(--fs-2xl);
+}
+.fs_2xxl {
+  font-size: var(--fs-2xxl);
+}
+.fs_3xl {
+  font-size: var(--fs-3xl);
+}
+.fs_4xl {
+  font-size: var(--fs-4xl);
+}
+.fs_5xl {
+  font-size: var(--fs-5xl);
+}
+.fw_400 {
+  font-weight: 400;
+}
+.fw_500 {
+  font-weight: 500;
+}
+.fw_600 {
+  font-weight: 600 !important;
+}
+.fw_900 {
+  font-weight: 900;
+}
+.ff_PlusJakarta {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+.ff_Poppins {
+  font-family: "Poppins", sans-serif;
+}
+.ff_Roboto {
+  font-family: "Roboto", sans-serif;
+}
+.clr_black {
+  background-color: var(--clr-black);
+}
+.clr_lightwhite {
+  color: var(--clr-lightwhite);
+}
+.clr_00FFCC {
+  color: var(--clr-00FFCC);
+}
+.bg_lightblack {
+  background-color: var(--clr-lightblack);
+}
+.bg_lightgreen {
+  background-color: var(--clr-lightgreen);
+}
+.opacity_7 {
+  opacity: 0.7;
+}
+.opacity_9 {
+  opacity: 0.9;
+}
+.navhover:hover {
+  color: var(--clr-27BBA2) !important;
+}
+.navhover {
+  transition: all 0.2s linear;
+}
+.navhover::after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--clr-27BBA2);
+  left: 35%;
+  bottom: -19px;
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+.navhover:hover:after {
+  left: 0;
+  width: 100%;
+}
+.navhover:focus {
+  color: var(--clr-27BBA2) !important;
+}
+.navhover:focus:after {
+  left: 0;
+  width: 100%;
+}
+.green_btn {
+  background: linear-gradient(139.21deg, #27bba2 -13.86%, #1f8f45 112.5%),
+    linear-gradient(139.21deg, #1f8f7c -13.86%, #1f8f45 112.5%), #1f8f7c;
+  padding: 15px 30px;
+  border: 1px solid #24ad85;
+  transition: all 0.1s linear;
+}
+.green_btn:hover {
+  background: unset;
+  border: 1px solid #24ad85;
+}
+.w_659 {
+  max-width: 659.44px;
+}
+.zindex_4 {
+  z-index: 4;
+}
+.zindex_1 {
+  z-index: -1;
+}
+.top_25 {
+  top: 25%;
+}
+.start_43 {
+  left: 43px;
+}
+.start_92 {
+  left: -92px;
+}
+.bottom_160 {
+  bottom: 160px;
+}
+.start_60 {
+  left: -60px;
+}
+.bottom_100 {
+  bottom: 100px;
+}
+.top_140 {
+  top: 140px;
+}
+.end_8 {
+  right: -8px;
+}
+.top_2 {
+  top: 2px;
+}
+.right_11 {
+  right: 0px;
+  z-index: -1;
+}
+.rotate_45 {
+  transform: rotate(90deg);
+}
+.leter_spacing_067 {
+  letter-spacing: 0.67em;
+}
+.mw_587 {
+  max-width: 587px;
+}
+.optimize_shadow::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #29dabc;
+  opacity: 0.4;
+  filter: blur(100px);
+  width: 409.46px;
+  height: 269.15px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.heroimg::after {
+  content: "Certificated  Method";
+  position: absolute;
+  background: rgba(39, 187, 162, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  color: var(--clr-lightwhite);
+  font-size: var(--fs-md);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  width: 147.77px;
+  padding: 20px;
+  right: -50px;
+  top: 75px;
+}
+.heroimg::before {
+  content: "No Injection Required";
+  position: absolute;
+  background: rgba(39, 187, 162, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  color: var(--clr-lightwhite);
+  font-size: var(--fs-md);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  width: 147.77px;
+  padding: 20px;
+  left: -29px;
+  bottom: 64px;
+}
+.hero_shadow::after {
+  content: " ";
+  position: absolute;
+  right: -180px;
+  top: 100px;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+  width: 217.54px;
+  height: 217.54px;
+}
+.hero_shadow::before {
+  content: " ";
+  position: absolute;
+  left: -60px;
+  bottom: 60px;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+  width: 217.54px;
+  height: 217.54px;
+}
+.symptomsshadows::after {
+  content: " ";
+  position: absolute;
+  left: 33%;
+  top: 0;
+  z-index: -1;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+  width: 232.14px;
+  height: 232.14px;
+}
+.symptomsshadows::before {
+  content: " ";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+  width: 232.14px;
+  height: 232.14px;
+}
+.oldman::before {
+  content: "";
+  position: absolute;
+  width: 252.14px;
+  height: 252.14px;
+  top: -50px;
+  left: -100px;
+  background: #29dabc;
+  opacity: 0.4;
+  filter: blur(100px);
+  z-index: -1;
+}
+.oldman::after {
+  content: "";
+  position: absolute;
+  width: 111.76px;
+  height: 111.76px;
+  background: #27bba2;
+  right: 30px;
+  top: 0;
+  z-index: -1;
+  transition: all 0.2s linear;
+}
+.oldman:hover.oldman::after {
+  scale: 1.1;
+}
+.end_65 {
+  right: -65px;
+}
+.top_60 {
+  top: -60px;
+}
+.bg_clr {
+  background: rgba(39, 187, 162, 0.08);
+  border-radius: 20px;
+}
+.border_line {
+  opacity: 0.2;
+  border: 1px solid #fafafa;
+}
+.hormonesafter::after {
+  content: "";
+  background: #27bba2;
+  border-radius: 0px 0px 15.874px 0px;
+  position: absolute;
+  width: 126.72px;
+  height: 126.72px;
+  right: 25px;
+  bottom: 50px;
+  z-index: -1;
+}
+.hormonesbefore::before {
+  content: "";
+  position: absolute;
+  width: 252.14px;
+  height: 252.14px;
+  bottom: -50px;
+  right: -50px;
+  background: #29dabc;
+  opacity: 0.4;
+  filter: blur(100px);
+  z-index: -1;
+}
+.w_90 {
+  width: 90%;
+}
+.mw_555 {
+  max-width: 555px;
+}
+.Patient_Recover::after {
+  content: "";
+  background: #27bba2;
+  border-radius: 0px 0px 0px 15.8px;
+  position: absolute;
+  width: 126.72px;
+  height: 126.72px;
+  left: 3px;
+  bottom: -13px;
+  z-index: -1;
+}
+.Patient_Recover::before {
+  content: "";
+  position: absolute;
+  width: 273px;
+  height: 269px;
+  left: -180px;
+  top: 20%;
+  z-index: -1;
+  background: #27bba2;
+  filter: blur(150px);
+}
+.bg_clr_eye {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  max-width: 207px;
+  border-radius: 12px;
+  bottom: 177px;
+  left: -60px;
+}
+.pantien_bg {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  border-radius: 12px;
+  width: 241px;
+  padding: 28px 18px 22px 19px;
+  right: 0;
+  bottom: -15px;
+}
+.arrowsafter::before {
+  content: url(./assets/image/svg/patientsarrows.svg);
+  position: absolute;
+  top: -70px;
+  left: -35px;
+}
+.optimize_pluseleft {
+  position: absolute;
+  left: 86px;
+  top: 63px;
+}
+.optimize_eyeleft {
+  position: absolute;
+  left: 86px;
+  bottom: 111px;
+}
+.optimize_eyeright {
+  position: absolute;
+  right: 108px;
+  top: 29px;
+}
+.optimize_pluseright {
+  position: absolute;
+  right: 208px;
+  bottom: 75px;
+}
+.optimize_plusebottom {
+  position: absolute;
+  left: 349px;
+  bottom: 26px;
+}
+.optimize_shadow svg path {
+  animation: svgcolor 2s infinite;
+}
+@keyframes svgcolor {
+  0% {
+  }
+  50% {
+    fill: white;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.abouthero svg path {
+  animation: svgcolor 2s infinite;
+}
+.bradius_197 {
+  border-radius: 197px;
+}
+.learnbtn {
+  background: linear-gradient(139.21deg, #27bba2 -13.86%, #1f8f45 112.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: 2px solid #219859;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+.bg_success {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(74px);
+  border-radius: 17px;
+  padding: 27px 35px;
+}
+.bg_successsection {
+  background: rgba(37, 174, 134, 0.08);
+  border-radius: 20px;
+}
+.h_552 {
+  max-width: 891px;
+}
+.top_43 {
+  top: 43px;
+}
+.eligibleyes {
+  background: rgba(37, 174, 134, 0.08);
+  border: 1px solid transparent;
+  border-radius: 16px;
+  transition: all 0.3s linear;
+}
+.eligibleyes:hover {
+  border: 1px solid rgba(38, 178, 143, 0.46);
+}
+.eligibleyes::after {
+  content: "";
+  position: absolute;
+  background: #29dabc;
+  opacity: 0.4;
+  filter: blur(100px);
+  width: 305.19px;
+  height: 200.61px;
+  bottom: 0;
+  right: 20px;
+}
+.eligilbleendshadow::after {
+  content: "";
+  position: absolute;
+  background: #29dabc;
+  opacity: 0.4;
+  filter: blur(100px);
+  width: 235.19px;
+  height: 170.61px;
+  top: 60px;
+  right: 0;
+}
+.eligiblearrows::before {
+  content: url(./assets/image/svg/patientsarrows.svg);
+  position: absolute;
+  left: 170px;
+  top: -50px;
+}
+.enrollment_bg {
+  padding: 26px 40px 26px 20px;
+  background: rgba(37, 174, 134, 0.08);
+  border-radius: 16px;
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+}
+.enrollment_bg:hover {
+  border: 1px solid rgba(38, 178, 143, 0.46);
+}
+.w_80 {
+  width: 65%;
+}
+.feeshadow::after {
+  content: "";
+  width: 164.81px;
+  height: 374.11px;
+  position: absolute;
+  background: #29dabc;
+  opacity: 0.4;
+  filter: blur(100px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.leftcross::before {
+  content: url(./assets/image/svg/rightcross.svg);
+  position: absolute;
+  left: -80px;
+  top: 60px;
+}
+.rightcross::after {
+  content: url(./assets/image/svg/leftcross.svg);
+  position: absolute;
+  right: -70px;
+  bottom: 80px;
+}
+.feearow::before {
+  content: url(./assets/image/svg/feearrow.svg);
+  position: absolute;
+  top: -40px;
+  right: 60px;
+}
+.feeshadow1::before {
+  content: "";
+  position: absolute;
+  width: 252.14px;
+  height: 252.14px;
+  left: 0;
+  top: -50px;
+  background: #29dabc;
+  opacity: 0.4;
+  filter: blur(100px);
+}
+.bg_imgexperts {
+  background-image: url(./assets/image//webp/experts.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #194935;
+  border-radius: 20px;
+}
+.exmanborder {
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+.bradius_12 {
+  border-radius: 12px;
+  transition: all 0.3s linear;
+}
+.bradius_12:hover {
+  transform: scale(1.1);
+}
+.expertsname svg path {
+  transition: all 0.3s linear;
+}
+.expertsname svg rect {
+  transition: all 0.3s linear;
+}
+.expertsname a:hover svg path {
+  fill: white;
+}
+.expertsname a:hover svg rect {
+  stroke: white;
+}
+.max_w637 {
+  max-width: 637px;
+}
+.readmore {
+  transition: all 0.3s linear;
+}
+.readmore:hover {
+  font-weight: 600;
+}
+.hoverarrows {
+  cursor: pointer;
+}
+/* .hoverarrows:hover circle {
+  fill: #27bba2;
+}
+.hoverarrows:hover path {
+  fill: #fafafa;
+} */
+.patentsarrows::before {
+  content: url(./assets/image/svg/patientsarrows.svg);
+  position: absolute;
+  left: -200px;
+  top: -60px;
+}
+.ourpatientshadow::after {
+  content: "";
+  position: absolute;
+  width: 297px;
+  height: 297px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #29dabc;
+  opacity: 0.4;
+  filter: blur(100px);
+  z-index: -1;
+}
+.bg_transparent {
+  background-color: transparent;
+}
+.bg_questions {
+  background: linear-gradient(
+    139.21deg,
+    #27bba2 -13.86%,
+    #1f8f45 112.5%
+  ) !important;
+  border-radius: 10px;
+}
+.paddingbtn {
+  padding: 23px 22px;
+  border: none;
+}
+.border_bottom {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+.accordion {
+  margin-left: 50px;
+}
+.accordion-button {
+  color: var(--clr-lightwhite) !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: var(--fs-xl) !important;
+  background: transparent !important;
+  padding: 22px 22px 22px 0px !important;
+}
+.accordion-body {
+  padding: 22px 10px !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+.accordion-button:focus {
+  z-index: 0 !important;
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.accordion-button:hover {
+  background: linear-gradient(
+    139.21deg,
+    #27bba2 -13.86%,
+    #1f8f45 112.5%
+  ) !important;
+  border-radius: 4px !important;
+}
+.accordion-item {
+  background-color: transparent !important;
+  color: var(--clr-lightwhite) !important;
+  font-weight: 500 !important;
+  font-size: var(--fs-md) !important;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2) !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-radius: 0 !important;
+  margin-bottom: 10px;
+}
+.accordion-button::after {
+  background-image: url(./assets/image/svg/arrowupdown.svg) !important;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+.questionsarrows::before {
+  content: url(./assets/image/svg/askedquestionsarrows.svg);
+  position: absolute;
+  top: -80px;
+  left: 15%;
+}
+.mw_287 {
+  max-width: 287px;
+}
+.w_234 {
+  width: 234px;
+}
+.searchbox {
+  background: rgba(48, 48, 48, 0.7);
+  border-radius: 8px;
+  padding: 4px;
+}
+.searchbox input {
+  background: none;
+  padding: 6px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: var(--fs-md);
+  color: var(--clr-lightwhite);
+  opacity: 0.7;
+  width: 95%;
+  font-family: "Roboto", sans-serif;
+}
+::placeholder {
+  font-weight: 600;
+  font-size: var(--fs-md);
+  color: var(--clr-lightwhite);
+  opacity: 0.7;
+  font-family: "Roboto", sans-serif;
+}
+.bg_footer {
+  background: #0e202e;
+}
+.footerhover {
+  transition: all 0.3s linear;
+}
+.footerhover:hover {
   color: white;
+  font-weight: 500;
+  opacity: 1;
+}
+.lineborder {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+.opacity_8 {
+  opacity: 0.8;
+}
+.iconhvoer svg path {
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.iconhvoer svg rect {
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.iconhvoer svg:hover path {
+  fill: #23a370;
+}
+.iconhvoer svg:hover rect {
+  fill: #fbfbfb;
+}
+.h_300 {
+  height: 300px;
+}
+.abouthero::after {
+  content: "";
+  position: absolute;
+  width: 409.46px;
+  height: 269.15px;
+  left: calc(50% - 409.46px / 2 - 0.5px);
+  top: calc(50% - 269.15px / 2 - 0.5px);
+  z-index: -1;
+  background: #29dabc;
+  opacity: 0.4;
+  filter: blur(100px);
+}
+.herolefttop {
+  position: absolute;
+  top: 41px;
+  left: 51px;
+}
+.heroleftbottom {
+  position: absolute;
+  bottom: 50px;
+  left: 15%;
+}
+.herorighttop {
+  position: absolute;
+  top: 41px;
+  right: 20%;
+}
+.herorightbottom {
+  position: absolute;
+  bottom: 50px;
+  right: 28%;
+}
+.ourteamshadow::after {
+  content: "";
+  position: absolute;
+  width: 217.54px;
+  height: 217.54px;
+  top: 10%;
+  z-index: -1;
+  right: 0;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+}
+.ourteamshadow::before {
+  content: "";
+  position: absolute;
+  width: 217.54px;
+  height: 217.54px;
+  bottom: -10%;
+  z-index: -1;
+  right: 0;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+}
+.ourleftshadow::after {
+  content: "";
+  position: absolute;
+  width: 160.54px;
+  height: 217.54px;
+  top: 52%;
+  z-index: -1;
+  left: 0;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+}
+.ourleftshadow::before {
+  content: "";
+  position: absolute;
+  width: 217.54px;
+  height: 217.54px;
+  bottom: 0;
+  z-index: -1;
+  left: 35%;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+}
+.georgetrangle::before {
+  content: "";
+  position: absolute;
+  left: 23px;
+  top: -23px;
+  width: 126.72px;
+  height: 126.72px;
+  background: #27bba2;
+  border-radius: 15.8px 0px 15.874px;
+  z-index: -1;
+}
+.briantrangle::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: -18px;
+  width: 126.72px;
+  height: 126.72px;
+  background: #27bba2;
+  border-radius: 0px 0px 15.874px 0px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  z-index: -1;
+}
+.br_12 {
+  border-radius: 12px;
+}
+.ourteamimg {
+  transition: all 0.3s linear;
+}
+.ourteamimg:hover {
+  box-shadow: 5px 5px 19px gray;
+}
+.ourjourney_arrow::before {
+  content: url(./assets/image/svg/patientsarrows.svg);
+  top: -50px;
+  left: 24%;
+  position: absolute;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 72%;
+  border: 2px dashed #fafafa;
+  top: 14%;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* our_journey around content */
+.our_journey {
+  position: relative;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.our_journey::after {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  right: -18px;
+  background: linear-gradient(139.21deg, #27bba2 -13.86%, #1f8f45 112.5%);
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the our_journey to the left */
+.left {
+  left: 0;
+}
+
+/* Place the our_journey to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left our_journey (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 145px;
+  right: 0;
+  border: 2px dashed #fafafa;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/* Add arrows to the right our_journey (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 145px;
+  left: 0;
+  border: 2px dashed #fafafa;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/* Fix the circle for our_journeys on the right side */
+.right::after {
+  left: -21px;
+}
+/* The actual content */
+.content {
+  padding: 35px 19px;
+  background: rgba(39, 187, 162, 0.1);
+  border-radius: 10px;
+  max-width: 410px;
+  height: 230px;
+  transition: all 0.3s linear;
+}
+.content:hover {
+  border: 2px solid #27bba2;
+  border-radius: 10px;
+}
+.ourjourney_shadow::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+  width: 217.54px;
+  height: 217.54px;
+}
+.ourjourney_shadow::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+  width: 217.54px;
+  height: 217.54px;
+}
+.ourjourneycenter_shadow::after {
+  content: "";
+  position: absolute;
+  right: 10%;
+  top: 32%;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+  width: 217.54px;
+  height: 217.54px;
+}
+.bg_askedquestion {
+  background: rgba(37, 174, 134, 0.08);
+  border-radius: 20px;
+}
+.bg_askedquestion::after {
+  content: "";
+  position: absolute;
+  background: #29dabc;
+  opacity: 0.4;
+  filter: blur(100px);
+  width: 409.46px;
+  height: 269.15px;
+  left: calc(50% - 409.46px / 2 + 132.54px);
+  top: calc(50% - 269.15px / 2 + 126.62px);
+  z-index: -1;
+}
+.youtubelogo {
+  cursor: pointer;
+}
+.youtubelogo::before {
+  content: url(./assets/image/svg/logos_youtube-icon.svg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.videsshadow::after {
+  content: " ";
+  position: absolute;
+  width: 217.54px;
+  height: 217.54px;
+  right: 7%;
+  top: 38%;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+}
+.videsshadow::before {
+  content: " ";
+  position: absolute;
+  width: 217.54px;
+  height: 217.54px;
+  left: 0;
+  top: 68%;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+}
+.video_centershadow::before {
+  content: " ";
+  position: absolute;
+  width: 217.54px;
+  height: 217.54px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 68%;
+  z-index: -1;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+}
+.video_arrows::after {
+  content: url(./assets/image/svg/videoarrows.svg);
+  position: absolute;
+  top: -60px;
+  right: 14%;
+}
+.youtubelogo2 {
+  cursor: pointer;
+}
+.youtubelogo2::before {
+  content: url(./assets/image/svg/logos_youtube-icon1.svg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.videobg {
+  background: rgba(39, 187, 162, 0.08);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: all 0.3s linear;
+}
+.videobg:hover {
+  border: 2px solid #27bba2;
+}
+.br_10 {
+  border-radius: 10px 10px 0px 0px;
+}
+.modal-fullscreen .modal-body {
+  overflow: hidden !important;
+}
+.videoshadow::after {
+  content: "";
+  position: absolute;
+  width: 217.54px;
+  height: 217.54px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+}
+.videoshadow::before {
+  content: "";
+  position: absolute;
+  width: 217.54px;
+  height: 217.54px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #29dabc;
+  opacity: 0.5;
+  filter: blur(100px);
+}
+.btnwet {
+  background: linear-gradient(139.21deg, #27bba2 -13.86%, #1f8f45 112.5%);
+  border-radius: 6px;
+  border: none;
+  padding: 10px 18px;
+}
+.btndry {
+  padding: 10px 18px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: transparent;
+  border-radius: 6px;
+}
+.bg_wet {
+  background: rgba(37, 174, 134, 0.08);
+  border-radius: 33px;
+}
+.bg_wet::after {
+  content: "";
+  position: absolute;
+  width: 409.46px;
+  height: 269.15px;
+  left: calc(50% - 409.46px / 2 + 131.54px);
+  top: calc(50% - 269.15px / 2 + 172.12px);
+  background: #29dabc;
+  opacity: 0.4;
+  filter: blur(100px);
+  z-index: -1;
+}
+.sixsvf {
+  bottom: -19px;
+  z-index: -1;
+}
+.crsor_pointer {
+  cursor: pointer;
+}
+.rodneyimg_ractange::after {
+  content: "";
+  position: absolute;
+  width: 111.76px;
+  height: 111.76px;
+  right: 0;
+  top: -16px;
+  z-index: -1;
+  background: #27bba2;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.wetslider .slick-list {
+  overflow: visible;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .left::before {
+    width: 57px;
   }
-  to {
-    transform: rotate(360deg);
+  .right::before {
+    width: 57px;
+  }
+  .questionsarrows::before {
+    left: 0;
+  }
+  .end_65 {
+    right: -45px;
+  }
+  .hormonesafter::after {
+    right: 20px;
+    bottom: 35px;
+  }
+}
+@media (max-width: 992px) {
+  .video_arrows::after {
+    display: none;
+  }
+  .modal-title {
+    font-size: 14px !important;
+  }
+  .ourjourney_arrow::before {
+    display: none;
+  }
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width our_journeys */
+  .our_journey {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  /* Make sure that all arrows are pointing leftwards */
+  .our_journey::before {
+    left: 30px;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 10px;
+  }
+
+  /* Make all right our_journeys behave like the left ones */
+  .right {
+    left: 0%;
+  }
+  .left::before {
+    width: 134px;
+  }
+  .right::before {
+    width: 229px;
+  }
+  .content {
+    margin-top: 16px;
+  }
+  .bg_change {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 10px;
+  }
+  .questionsarrows::before {
+    display: none;
+  }
+  .accordion {
+    margin-left: 5px;
+    margin-top: 20px;
+  }
+  .feearow::before {
+    display: none;
+  }
+  .rightcross::after {
+    display: none;
+  }
+  .leftcross::before {
+    display: none;
+  }
+  .eligiblearrows::before {
+    display: none;
+  }
+  .bradius_197 {
+    border-radius: 20px;
+  }
+  .arrowsafter::before {
+    display: none;
+  }
+  .hormonesafter::after {
+    right: 30px;
+    bottom: 55px;
+  }
+  .oldman::after {
+    right: 3px;
+  }
+  .phone {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+    z-index: 29;
+    transition: all 0.4s linear;
+  }
+  .left_0 {
+    left: 0;
+  }
+  .z_30 {
+    z-index: 30;
+  }
+  .navhover::after {
+    bottom: -8px;
+  }
+}
+@media (min-width: 1200px) {
+  .vh_100 {
+    min-height: 100vh;
+  }
+  .contaner1 {
+    max-width: 1140px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .position_absolute {
+    position: absolute;
+  }
+  .h_647 {
+    height: 647px;
+  }
+}
+@media (max-width: 768px) {
+  .left::before {
+    width: 45px;
+  }
+  .right::before {
+    width: 45px;
+  }
+  .georgetrangle::before {
+    left: 0;
+    top: -15px;
+  }
+  .briantrangle::after {
+    right: 0;
+    top: -15px;
+  }
+  .ourleftshadow::before {
+    display: none;
+  }
+  .bg_clr_eye {
+    left: 0;
+    bottom: 90%;
+    max-width: 180px;
+  }
+  .pantien_bg {
+    padding: 10px;
+    bottom: -80px;
+  }
+  .hormonesafter::after {
+    right: 20px;
+    bottom: 35px;
+  }
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-xl: 20px;
+    --fs-2xl: 24px;
+    --fs-3xl: 25px;
+    --fs-4xl: 40px;
+    --fs-5xl: 27px;
+  }
+  .heroimg::after {
+    font-size: 12px;
+    width: 88.77px;
+    padding: 8px;
+    right: -7px;
+    top: 0px;
+  }
+  .heroimg::before {
+    font-size: 12px;
+    width: 88.77px;
+    padding: 8px;
+    left: 0;
+    bottom: 0;
+  }
+  .hero_shadow::before {
+    left: 0;
+    bottom: 0;
+    width: 170px;
+    height: 170px;
+  }
+  .hero_shadow::after {
+    right: 0;
+    top: 0;
+    width: 170px;
+    height: 170px;
+  }
+  .start_60 {
+    left: -50px;
+  }
+  .green_btn {
+    padding: 10px 20px;
+  }
+  .w_100 {
+    width: 100%;
+  }
+  .right_11 {
+    right: 4px;
+  }
+}
+@media (max-width: 576px) {
+  :root {
+    --fs-sm: 12px;
+    --fs-md: 14px;
+    --fs-xl: 16px;
+    --fs-2xl: 24px;
+    --fs-3xl: 20px;
+    --fs-4xl: 30px;
+    --fs-5xl: 27px;
+  }
+  .bg_askedquestion::after{
+    width: 200px;
+    height: 200px;
+  }
+  .left::after,
+  .right::after {
+    left: 0;
+  }
+  .timeline::after {
+    left: 21px;
+  }
+  .content {
+    padding: 10px;
+    margin-top: 16px;
+  }
+  .our_journey {
+    padding-left: 40px;
+    padding-right: 0px;
+  }
+  .left::before {
+    width: 0px;
+  }
+  .right::before {
+    width: 0px;
+  }
+  .oldman::after {
+    right: 20px;
+  }
+  .hormonesafter::after {
+    right: 10px;
+    bottom: 20px;
+  }
+  .Patient_Recover::before {
+    height: 139px;
+  }
+  .hormonesbefore::before {
+    right: 0;
+  }
+  .oldman::before {
+    left: 0;
+  }
+  .optimize_pluseleft {
+    left: 10px;
+    top: 20px;
+  }
+  .optimize_eyeleft {
+    left: 10px;
+    bottom: 20px;
+  }
+  .optimize_eyeright {
+    top: 20px;
+    right: 10px;
+  }
+  .optimize_pluseright {
+    right: 10px;
+    bottom: 20px;
+  }
+  .optimize_plusebottom {
+    bottom: 20px;
+    left: 50%;
+  }
+  .optimize_shadow::before {
+    width: 150px;
+    height: 150px;
+  }
+  .bg_success {
+    padding: 18px;
+  }
+  .feeshadow1::before {
+    width: 150.14px;
+    height: 150.14px;
+  }
+  .enrollment_bg {
+    padding: 15px;
+  }
+  .patentsarrows::before {
+    display: none;
+  }
+  .accordion-button {
+    padding: 15px 15px 15px 0px !important;
+  }
+  .accordion-body {
+    padding: 9px !important;
+  }
+  .abouthero::after {
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
