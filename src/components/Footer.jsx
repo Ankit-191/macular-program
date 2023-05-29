@@ -10,7 +10,7 @@ const Footer = () => {
       <section className="bg_footer pt-5 pb-3">
         <Container className="contaner1 pt-lg-5">
           <Row>
-            <Col xs={12} sm={6} lg={5} className="pt-sm-4">
+            <Col xs={12} sm={6} lg={5} className="pt-4">
               <Link to="/">
                 <img src={logo} alt="macular program" className="mb-3" />
               </Link>
@@ -60,7 +60,7 @@ const Footer = () => {
                 </svg>
               </div>
             </Col>
-            <Col xs={6} sm={6} lg={2} className="ps-sm-5 pt-sm-4">
+            <Col xs={6} sm={6} lg={2} className="ps-sm-5 pt-4">
               <p className="ff_Roboto fs_md fw_900 clr_lightwhite">
                 Ouick Links
               </p>

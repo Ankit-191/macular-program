@@ -1,16 +1,9 @@
 import React from "react";
 import { Col, Container, Row, Stack } from "react-bootstrap";
 import vitnage from "../assets/image/png/vitnagetypewriter.png";
-import Slider from "react-slick";
+
 
 const Symptoms = () => {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
   return (
     <>
       <section className="py-5 my-lg-4">
@@ -88,17 +81,7 @@ const Symptoms = () => {
             </Row>
           </div>
 
-          <Slider {...settings} className=" position-relative">
-            <div>
-              <h3 className="bg-white had1">1</h3>
-            </div>
-            <div>
-              <h3 className="bg-danger had2">2</h3>
-            </div>
-            <div>
-              <h3 className="bg-white had3">3</h3>
-            </div>
-          </Slider>
+          
         </Container>
       </section>
     </>
