@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { Accordion, Col, Container, Row } from "react-bootstrap";
 
-const Askedquestions = () => {
+const Askedquestions = ({shadow, arrow}) => {
   const [tabs, settabs] = useState("tab1");
   const clickbtn = (data) => {
     settabs(data.target.id);
   };
   return (
     <>
-      <section className="py-5">
+      <section className={`py-5 ${shadow}`}>
         <Container className="py-lg-5 my-lg-5">
-          <h2 className="ff_PlusJakarta fw_500 fs_4xl text-white text-center opacity_9 mb-lg-5 pb-4 questionsarrows position-relative">
+          <h2 className={`ff_PlusJakarta fw_500 fs_4xl text-white text-center opacity_9 mb-lg-5 pb-4 ${arrow}`}>
             Frequently Asked Questions
           </h2>
           <Row>

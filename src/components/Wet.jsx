@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Rodney from "../assets/image/webp/rodney.webp";
+import Gunther from '../assets/image/webp/wetimg2.webp'
 import left from "../assets/image/svg/sliderleftarrow.svg";
 import right from "../assets/image/svg/sliderrightarrow.svg";
 import stary from "../assets/image/svg/Staryellow.svg";
@@ -97,7 +98,7 @@ const Wet = () => {
                     <Col md={5} lg={4}>
                       <div className="pe-3 rodneyimg_ractange position-relative">
                         <img
-                          src={Rodney}
+                          src={Gunther}
                           alt="Rodney Gunther"
                           className="w-100"
                         />
@@ -157,7 +158,7 @@ const Wet = () => {
                     <Col md={5} lg={4}>
                       <div className="pe-3 rodneyimg_ractange position-relative">
                         <img
-                          src={Rodney}
+                          src={Gunther}
                           alt="Rodney Gunther"
                           className="w-100"
                         />

@@ -19,9 +19,10 @@ const About = () => {
       <Patientrecover />
       <Success />
       <Patinets />
-      <div className="bg_askedquestion position-relative">
-        <Askedquestions />
-      </div>
+      <Askedquestions
+        shadow="bg_askedquestion position-relative"
+        arrow="questionsarrows position-relative"
+      />
       <Footer />
     </>
   );
